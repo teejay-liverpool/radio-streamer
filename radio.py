@@ -75,8 +75,6 @@ command = "echo 'Tuning to station ' " + stations[0][0] + " | festival --tts"
 print command
 os.system( command ) 
 
-#time.sleep(10)
-
 p = Popen(['mplayer' , '-quiet', '-playlist',stations[0][1] ]) 
 
 delay = 0.3
